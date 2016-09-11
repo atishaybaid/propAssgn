@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="propApp">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/services/d3ChartGenerator.js"></script>
+    <script type="text/javascript" src="js/controllers/mainCtrl.js"></script>
+    <script type="text/javascript" src="js/directives/chartModal.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+
+</head>
+<body ng-controller="mainCtrl">
+	<select ng-model="modelType">
+	<option value="Chart">Chart</option>
+		<option value="Chart">Chart</option>
+		<option value="Illustration">Illustration</option>
+
+
+
+	</select>
+
+	<input type="button" value="generate" ng-click="generateGraphs()">Generate</input>
+
+	<chart-modal/>
+
+    
+</body>
+</html>
